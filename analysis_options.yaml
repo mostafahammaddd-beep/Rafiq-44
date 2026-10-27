@@ -1,0 +1,19 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  # Never analyze stale nested copies of the project (for example a leftover
+  # rafiq_final_work/ or rafiq_v0_4_x/ folder from a mistaken upload) or
+  # generated output. Only the package at the repository root is built.
+  exclude:
+    - rafiq_final_work/**
+    - "**/rafiq_final_work/**"
+    - rafiq_v*/**
+    - android/**
+    - build/**
+    - .dart_tool/**
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_final_locals: true
+    unawaited_futures: true
